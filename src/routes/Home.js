@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { dbService, storageService } from "myBase";
+import { dbService } from "myBase";
 import Nweet from "components/Nweet";
 import NweetFactory from "components/NweetFactory";
 
@@ -16,9 +16,9 @@ const Home = ({ userObj }) => {
       });
   }, []);
   return (
-    <div>
+    <div className="container">
       <NweetFactory userObj={userObj} />
-      <div>
+      <div style={{ marginTop: 30 }}>
         {nweets.map((nweet) => (
           <Nweet
             key={nweet.id}
