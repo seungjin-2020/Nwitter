@@ -1,32 +1,28 @@
 import React, {useEffect, useState} from 'react';
-import { Router } from 'react-router-dom';
 import AppRouter from "components/Router"
 import {authService} from "myBase";
 
-
-
 function App() {
-  
   const [init, setInit] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userObj, setUserObj] = useState(null);
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
-      if(user){
-        setIsLoggedIn(true);
-      }else {
-        setIsLoggedIn(false);
+      if (user) {
+    
+        setUserObj(user);
       }
-        setInit(true);
+      setInit(true);
     });
-  }, [])
-  setInterval(() => {
-    console.log(authService.currentUser)
-  },2000)
-  return <>
-    {init ?<AppRouter isLoggedIn={isLoggedIn} /> : "Initalizing......"}
-    <footer>&copy; Nwitter {new Date().getFullYear()}</footer>
-  </>
-  
+  }, []);
+  return (
+    <>
+      {init ? (
+        <AppRouter isLoggedIn={Boolean(userObj)} userObj={userObj} />
+      ) : (
+        "Initializing..."
+      )}
+      
+    </>
+  );
 }
-
 export default App;
