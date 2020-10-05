@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/nwitter/static/css/main.e1eb686f.chunk.css",
-    "main.js": "/nwitter/static/js/main.13386ecc.chunk.js",
-    "main.js.map": "/nwitter/static/js/main.13386ecc.chunk.js.map",
-    "runtime-main.js": "/nwitter/static/js/runtime-main.222ae764.js",
-    "runtime-main.js.map": "/nwitter/static/js/runtime-main.222ae764.js.map",
-    "static/js/2.e572b424.chunk.js": "/nwitter/static/js/2.e572b424.chunk.js",
-    "static/js/2.e572b424.chunk.js.map": "/nwitter/static/js/2.e572b424.chunk.js.map",
-    "index.html": "/nwitter/index.html",
-    "precache-manifest.1cee81c06632b62ea745b5741ebd592a.js": "/nwitter/precache-manifest.1cee81c06632b62ea745b5741ebd592a.js",
-    "service-worker.js": "/nwitter/service-worker.js",
-    "static/css/main.e1eb686f.chunk.css.map": "/nwitter/static/css/main.e1eb686f.chunk.css.map",
-    "static/js/2.e572b424.chunk.js.LICENSE.txt": "/nwitter/static/js/2.e572b424.chunk.js.LICENSE.txt"
+    "main.css": "/Nwitter/static/css/main.e1eb686f.chunk.css",
+    "main.js": "/Nwitter/static/js/main.13386ecc.chunk.js",
+    "main.js.map": "/Nwitter/static/js/main.13386ecc.chunk.js.map",
+    "runtime-main.js": "/Nwitter/static/js/runtime-main.fcdd3e8e.js",
+    "runtime-main.js.map": "/Nwitter/static/js/runtime-main.fcdd3e8e.js.map",
+    "static/js/2.de9aa1d0.chunk.js": "/Nwitter/static/js/2.de9aa1d0.chunk.js",
+    "static/js/2.de9aa1d0.chunk.js.map": "/Nwitter/static/js/2.de9aa1d0.chunk.js.map",
+    "index.html": "/Nwitter/index.html",
+    "precache-manifest.8ac764ac3f0de550bd2080b5e744d527.js": "/Nwitter/precache-manifest.8ac764ac3f0de550bd2080b5e744d527.js",
+    "service-worker.js": "/Nwitter/service-worker.js",
+    "static/css/main.e1eb686f.chunk.css.map": "/Nwitter/static/css/main.e1eb686f.chunk.css.map",
+    "static/js/2.de9aa1d0.chunk.js.LICENSE.txt": "/Nwitter/static/js/2.de9aa1d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.222ae764.js",
-    "static/js/2.e572b424.chunk.js",
+    "static/js/runtime-main.fcdd3e8e.js",
+    "static/js/2.de9aa1d0.chunk.js",
     "static/css/main.e1eb686f.chunk.css",
     "static/js/main.13386ecc.chunk.js"
   ]
