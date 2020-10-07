@@ -26,8 +26,7 @@ function App() {
       uid: user.uid,
       updateProfile: (args) => user.updateProfile(args),
     });
-  } 
-  
+  };
   return (
     <>
       {init ? (
@@ -39,8 +38,8 @@ function App() {
       ) : (
         "Initializing..."
       )}
-      
     </>
   );
 }
+
 export default App;

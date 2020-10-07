@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{Fragment} from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Auth from "routes/Auth";
 import Home from "routes/Home";
@@ -11,7 +11,9 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
     <Router>
       {isLoggedIn && <Navigation userObj={userObj} />}
       <Switch>
+        
         {isLoggedIn ? (
+          <Fragment>
           <div
             style={{
               maxWidth: 890,
@@ -29,6 +31,7 @@ const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
               <Profile userObj={userObj} refreshUser={refreshUser} />
             </Route>
           </div>
+          </Fragment>
         ) : (
             <>
               <Route exact path="/">
