@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import AppRouter from "components/Router"
-import {authService} from "myBase";
+import React, { useState, useEffect } from "react";
+import AppRouter from "components/Router";
+import { authService } from "myBase";
 
 function App() {
   const [init, setInit] = useState(false);

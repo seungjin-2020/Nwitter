@@ -35,38 +35,38 @@ const AuthForm = () => {
     }
   };
   const toggleAccount = () => setNewAccount((prev) => !prev);
-    return (
-        <>
-          <form onSubmit={onSubmit} className="container">
-            <input
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-              value={email}
-              onChange={onChange}
-              className="authInput"
-            />
-            <input
-              name="password"
-              type="password"
-              placeholder="Password"
-              required
-              value={password}
-              className="authInput"
-              onChange={onChange}
-            />
-            <input
-              type="submit"
-              className="authInput authSubmit"
-              value={newAccount ? "Create Account" : "Sign In"}
-            />
-            {error && <span className="authError">{error}</span>}
-          </form>
-          <span onClick={toggleAccount} className="authSwitch">
-            {newAccount ? "Sign In" : "Create Account"}
-          </span>
-        </>
-      );
-    };
+  return (
+    <>
+      <form onSubmit={onSubmit} className="container">
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+          value={email}
+          onChange={onChange}
+          className="authInput"
+        />
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          required
+          value={password}
+          className="authInput"
+          onChange={onChange}
+        />
+        <input
+          type="submit"
+          className="authInput authSubmit"
+          value={newAccount ? "Create Account" : "Sign In"}
+        />
+        {error && <span className="authError">{error}</span>}
+      </form>
+      <span onClick={toggleAccount} className="authSwitch">
+        {newAccount ? "Sign In" : "Create Account"}
+      </span>
+    </>
+  );
+};
 export default AuthForm;

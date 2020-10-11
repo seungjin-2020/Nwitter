@@ -8,7 +8,6 @@ import {
 import { authService, firebaseInstance } from "myBase";
 import AuthForm from "components/AuthForm";
 
-
 const Auth = () => {
   const onSocialClick = async (event) => {
     const {
@@ -21,7 +20,7 @@ const Auth = () => {
       provider = new firebaseInstance.auth.GithubAuthProvider();
     }
     await authService.signInWithPopup(provider);
-  }
+  };
   return (
     <div className="authContainer">
       <FontAwesomeIcon
@@ -33,9 +32,11 @@ const Auth = () => {
       <AuthForm />
       <div className="authBtns">
         <button onClick={onSocialClick} name="google" className="authBtn">
-          Continue with Google <FontAwesomeIcon icon={faGoogle} /></button>
+          Continue with Google <FontAwesomeIcon icon={faGoogle} />
+        </button>
         <button onClick={onSocialClick} name="github" className="authBtn">
-          Continue with Github <FontAwesomeIcon icon={faGithub} /></button>
+          Continue with Github <FontAwesomeIcon icon={faGithub} />
+        </button>
       </div>
     </div>
   );
